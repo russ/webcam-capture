@@ -1,0 +1,19 @@
+name: webcam-capture
+version: 0.1.0
+
+authors:
+  - Russ Smith <russ@bashme.org>
+
+crystal: 0.25.1
+
+license: MIT
+
+dependencies:
+  halite:
+    github: icyleaf/halite
+  hash_file:
+    github: mehmetc/hash_file
+  tasker:
+    github: spider-gazelle/tasker
+  awscr-s3:
+    github: taylorfinnell/awscr-s3

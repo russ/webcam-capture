@@ -1,0 +1,14 @@
+FROM crystallang/crystal:0.25.1
+
+ADD . /app
+ADD ./docker/docker_run_build.sh /app/docker_run_build.sh
+
+WORKDIR /app
+
+RUN shards update && \
+    rm -rf /app/build/app && \
+    crystal build src/garden/bootstrap.cr --release -o garden
+
+RUN chmod +x docker_run_build.sh
+
+CMD ["./docker_run_build.sh"]

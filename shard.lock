@@ -1,0 +1,30 @@
+version: 1.0
+shards:
+  awscr-s3:
+    github: taylorfinnell/awscr-s3
+    version: 0.3.2
+
+  awscr-signer:
+    github: taylorfinnell/awscr-signer
+    version: 0.5.2
+
+  bisect:
+    github: spider-gazelle/bisect
+    version: 1.1.0
+
+  cron_parser:
+    github: kostya/cron_parser
+    version: 0.2.0
+
+  halite:
+    github: icyleaf/halite
+    version: 0.7.1
+
+  hash_file:
+    github: mehmetc/hash_file
+    commit: a8e66ed5c4a504c256ded2e3aa823f3c81eeed4d
+
+  tasker:
+    github: spider-gazelle/tasker
+    version: 1.1.1
+
