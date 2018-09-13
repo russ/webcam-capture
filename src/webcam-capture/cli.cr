@@ -12,7 +12,7 @@ module WebcamCapture
           config_file = val
         end
 
-        parser.on("-v", "--version", "Show garden version") do
+        parser.on("-v", "--version", "Show version") do
           puts WebcamCapture::VERSION
           exit
         end

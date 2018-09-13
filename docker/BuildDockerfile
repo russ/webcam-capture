@@ -7,7 +7,7 @@ WORKDIR /app
 
 RUN shards update && \
     rm -rf /app/build/app && \
-    crystal build src/garden/bootstrap.cr --release -o garden
+    crystal build src/webcam-capture/bootstrap.cr --release -o webcam-capture
 
 RUN chmod +x docker_run_build.sh
 

@@ -1,3 +1,3 @@
 #!/bin/sh
 
-cp garden /app/build/
+cp webcam-capture /app/build/

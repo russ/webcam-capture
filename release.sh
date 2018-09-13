@@ -1,4 +1,4 @@
 #!/bin/bash
 
-docker build -t garden-build -f docker/BuildDockerfile .
-docker run -v $(pwd)/build:/app/build garden-build
+docker build -t webcam-capture-build -f docker/BuildDockerfile .
+docker run -v $(pwd)/build:/app/build webcam-capture-build
