@@ -1,30 +1,20 @@
-# .
+# Webcam Catpure
 
-https://picpipe.io/blog/how-to-upload-photos-to-ghost-using-private-api/
-https://github.com/TryGhost/Ghost/blob/master/core/server/data/schema/schema.js
+Example configuration file
 
-TODO: Write a description here
+```
+aws:
+  region: "us-east-1"
+  key: "XXX"
+  secret: "XXX"
+  bucket: "mybucket"
 
-## Installation
-
-TODO: Write installation instructions here
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Development
-
-TODO: Write development instructions here
-
-## Contributing
-
-1. Fork it (<https://github.com/russ/./fork>)
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
-
-## Contributors
-
-- [russ](https://github.com/russ) Russ Smith - creator, maintainer
+cameras:
+  format: "%Y/%m/%d/%H%M.jpg"
+  schedule: "* * * * *"
+  nest:
+    client_id: "XXX"
+    client_secret: "XXX"
+    to_capture:
+      - "Front Yard"
+```
